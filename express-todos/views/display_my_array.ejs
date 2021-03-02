@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="font-weight: 600;">Movie Titles:</div> </br>
+        <% for (let x of movieTitles) { %>
+            <li>Title: <%=x.title%> </li>
+            <li>Release Date: <%=x.release%></li>
+            <img src="<%= x.image %>" style="width: 15%;margin-left: 10px;"/>
+            <div>&nbsp;</div>
+            
+        <% } %>
+
+</body>
+</html>
